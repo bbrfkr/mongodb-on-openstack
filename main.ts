@@ -1,6 +1,6 @@
 import { App } from "cdktf";
-import { CodeServerStack } from "./src/code-server";
+import { MongoDbStack } from "./src/mongodb";
 
 const app = new App();
-new CodeServerStack(app, "code-server-on-openstack");
+new MongoDbStack(app, "mongodb-on-openstack");
 app.synth();
